@@ -8,13 +8,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.ibovumw.mongodb.net/?retryWrites=true&w=majority`;
-// const client = new MongoClient(uri, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   serverApi: ServerApiVersion.v1,
-// });
-
 const uri =
   "mongodb+srv://minion:yfYWH9y6wDfqDIaB@cluster0.ibovumw.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {
